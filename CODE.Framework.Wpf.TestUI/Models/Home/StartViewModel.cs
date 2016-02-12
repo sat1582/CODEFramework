@@ -18,7 +18,7 @@ namespace CODE.Framework.Wpf.TestUI.Models.Home
 
             // TODO: The following list of actions is used to populate the application's main navigation area (such as a menu or a home screen)
 
-            Actions.Add(new ViewAction("Menu Item #1", execute: (a, o) => Controller.Message("Menu Item #1 clicked!")) { Significance = ViewActionSignificance.AboveNormal });
+            Actions.Add(new ViewAction("List", execute: (a, o) => Controller.Action("Demo", "List")) { Significance = ViewActionSignificance.AboveNormal });
             Actions.Add(new ViewAction("Menu Item #2", execute: (a, o) => Controller.Message("Menu Item #2 clicked!")));
             Actions.Add(new ViewAction("Menu Item #3", execute: (a, o) => Controller.Message("Menu Item #3 clicked!")));
 

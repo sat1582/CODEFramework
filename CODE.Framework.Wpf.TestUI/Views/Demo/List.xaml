@@ -1,0 +1,14 @@
+<mvvm:View xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
+           Title="Simple List"
+           Style="{DynamicResource CODE.Framework-Layout-ListPrimarySecondaryFormLayout}">
+
+    <mvvm:View mvvm:View.UIElementType="Secondary">
+        <Label>Buscar</Label>
+    </mvvm:View>
+
+    <ListBox mvvm:View.UIElementType="Primary" 
+        ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}"
+        Style="{DynamicResource Control-ListBox-Employees}"/>
+
+</mvvm:View>

@@ -129,8 +129,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Models\Demo\ListViewModel.cs" />
     <Compile Include="Models\Home\StartViewModel.cs" />
     <Compile Include="Models\User\LoginViewModel.cs" />
     <Compile Include="Models\User\UserAndPrincipal.cs" />
@@ -232,6 +234,50 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\Workplace\Workplace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Demo\List.Battleship.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Default.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Geek.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Layout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Metro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Vapor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Wildcat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.Workplace.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Demo\List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

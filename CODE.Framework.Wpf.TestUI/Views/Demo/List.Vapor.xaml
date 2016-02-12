@@ -1,0 +1,19 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf">
+
+    <Style x:Key="Control-ListBox-Employees" TargetType="ListBox" BasedOn="{StaticResource Vapor-Control-ListBox}">
+        <Setter Property="controls:ListEx.Columns">
+            <Setter.Value>
+                <controls:ListColumnsCollection>
+                    <controls:ListColumn Header="FullName" BindingPath="FullName" Width="180" />
+                    <controls:ListColumn Header="Email" BindingPath="Email" Width="350" />
+                    <controls:ListColumn Header="TelephoneNumber" BindingPath="TelephoneNumber" Width="280" />
+                    <controls:ListColumn Header="Birthday" BindingPath="Birthday" Width="80" />
+                    <controls:ListColumn Header="Age" BindingPath="Age" Width="80" />
+                    <controls:ListColumn Header="Active" BindingPath="Active" Width="80" />
+                </controls:ListColumnsCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
